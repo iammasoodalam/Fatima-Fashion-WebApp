@@ -3,6 +3,7 @@ import Logo from "../components/Logo";
 import styles from "../styles/Home.module.scss";
 import Header from "../components/Header";
 import NavBar from "../components/NavBar";
+import Link from "next/link";
 
 export default function Home() {
   const { user, error, isLoading } = useUser();
@@ -18,9 +19,9 @@ export default function Home() {
             Your own personal area to manage your customers and orders for your
             boutique
           </p>
-          <a href="/api/auth/login" className={styles.login}>
+          <Link href="/api/auth/login" className={styles.login}>
             <div >Get Started</div>
-          </a>
+          </Link>
         </div>
       )}
 
@@ -32,7 +33,7 @@ export default function Home() {
           <h3>{user.name}</h3>
           <p>{user.email}</p>
           <div className={styles.login}>
-            <a href="/api/auth/logout">Logout</a>
+            <Link href="/api/auth/logout">Logout</Link>
           </div>
         </div>
       )}
