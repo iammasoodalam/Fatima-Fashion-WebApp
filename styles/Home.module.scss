@@ -1,0 +1,34 @@
+@use 'variables' as var;
+
+.banner{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.motto{
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.lorem{
+  text-align: justify;
+  margin: 1rem;
+}
+
+.login{
+  text-decoration: none;
+  color: var.$font-secondary;
+  
+  div{
+    background-color: var.$logo-color;
+    margin: 0 10vw;
+    padding: 0.5rem 0;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}

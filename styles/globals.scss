@@ -1,0 +1,39 @@
+@use 'variables' as var;
+/**
+  * font-family: Montserrat | Poppins
+  * italic: 300, 600, 900
+  * weight: 300, 600, 900
+  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&family=Poppins:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.logo{
+  fill: var.$logo-color;
+  scale: 4;
+  transform: translateY(-50%);
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+@media (prefers-color-scheme: dark){
+  body{
+    background-color: var.$bg-primary-dark;
+    color: var.$font-primary-dark;
+
+    input {
+      font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+  }
+
+}

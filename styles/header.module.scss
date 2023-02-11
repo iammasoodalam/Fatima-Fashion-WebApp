@@ -1,0 +1,15 @@
+@use 'variables' as var;
+
+.header{
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.searchBar{
+  display: block;
+  width: 100%;
+  padding: .75rem;
+  border-radius: 2rem;
+  border-color: transparent;
+  outline-color: var.$logo-color;
+}

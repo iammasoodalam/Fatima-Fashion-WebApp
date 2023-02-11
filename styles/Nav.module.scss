@@ -1,0 +1,37 @@
+@use "variables" as var;
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 0.5rem;
+}
+
+.navIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.3s;
+  svg {
+    scale: 1.25;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .navBar {
+    background-color: var.$bg-secondary-dark;
+  }
+  .navIcon svg path {
+    stroke: var.$logo-color;
+  }
+  .navIcon .active path {
+    stroke: none !important;
+    fill: var.$logo-color;
+    filter: drop-shadow(2px 2px 1px #1f1f1fc3);
+  }
+}
