@@ -21,10 +21,23 @@
   }
 }
 
-
 @media (prefers-color-scheme: dark) {
   .navBar {
     background-color: var.$bg-secondary-dark;
+  }
+  .navIcon svg path {
+    stroke: var.$logo-color;
+  }
+  .navIcon .active path {
+    stroke: none !important;
+    fill: var.$logo-color;
+    filter: drop-shadow(2px 2px 1px #1f1f1fc3);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .navBar {
+    background-color: var.$bg-secondary;
   }
   .navIcon svg path {
     stroke: var.$logo-color;

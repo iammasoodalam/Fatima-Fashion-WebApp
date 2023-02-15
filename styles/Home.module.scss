@@ -1,0 +1,24 @@
+@use "variables" as var;
+@use "buttons";
+
+.banner {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.motto {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.lorem {
+  text-align: justify;
+  margin: 1rem;
+}
+
+.main {
+  padding-bottom: 3rem;
+}

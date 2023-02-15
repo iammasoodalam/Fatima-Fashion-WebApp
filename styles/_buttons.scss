@@ -1,0 +1,15 @@
+@use "variables" as var;
+
+.login {
+  text-decoration: none;
+  color: var.$font-secondary;
+  div {
+    background-color: var.$logo-color;
+    margin: 1.5rem 10vw;
+    padding: 0.5rem 0;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
