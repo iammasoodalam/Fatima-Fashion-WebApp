@@ -1,6 +1,6 @@
-import '../styles/globals.scss'
-import { UserProvider } from "@auth0/nextjs-auth0/client"
-import Layout from '../components/Layout'
+import "../styles/globals.scss";
+import { UserProvider } from "@auth0/nextjs-auth0/client";
+import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </Layout>
     </UserProvider>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
