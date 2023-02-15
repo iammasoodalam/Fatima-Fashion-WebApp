@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import Link from "next/link";
 import { useState } from "react";
-import Tasks from "../components/tasks";
+import Tasks from "../components/Tasks";
 import Profile from "../components/Profile";
 
 export default function Home() {
